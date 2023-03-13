@@ -133,6 +133,7 @@ public class PrimaryController implements Initializable {
 
     @FXML
     private void btnSalir(ActionEvent event) {
+        // FIN DE PROGRAMACIÓN EN CLASE
         System.exit(0);
     }
 
