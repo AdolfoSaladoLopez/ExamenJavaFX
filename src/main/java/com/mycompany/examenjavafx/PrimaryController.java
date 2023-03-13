@@ -188,6 +188,12 @@ public class PrimaryController implements Initializable {
         SimplePdfExporterConfiguration conf = new SimplePdfExporterConfiguration();
         exp.setConfiguration(conf);
         exp.exportReport();
+        
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText("Reporte");
+            alert.setTitle("Reporte");
+            alert.setContentText("El reporte ha sido generado con éxito");
+            alert.showAndWait();
 
         System.out.print("Done!");
     }
